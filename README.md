@@ -4,7 +4,7 @@ API RESTful de una agenda telefónica, para la materia arquitectura web, constru
 
 ## Rutas
 
-#### Crear contacto
+#### Crear registro
 <details>
  <summary><code>POST</code> <code><b>/v1/contactos/</b></code><code>Agregar un nuevo contacto</code></summary>
 
