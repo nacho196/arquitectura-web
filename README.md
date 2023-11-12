@@ -40,7 +40,7 @@ curl -X POST -H "Content-Type: application/json" http://localhost:3000/v1/contac
 </details>
 
 ------------------------------------------------------------------------------------------
-#### Consultar contactos
+#### Consultar registros
 
 <details>
  <summary><code>GET</code> <code><b>/v1/contactos/</b></code><code>Consultar todos los contactos</code></summary>
@@ -169,7 +169,7 @@ curl -X PUT -H "Content-Type: application/json" http://localhost:3000/v1/contact
 </details>
 
 ------------------------------------------------------------------------------------------
-#### Eliminar registros
+#### Eliminar registro
 
 <details>
   <summary><code>DELETE </code> <code><b>/v1/contactos/{_id}</b></code><code>Eliminar registro por ID</code></summary>
