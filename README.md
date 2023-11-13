@@ -189,7 +189,7 @@ curl -X PUT -H "Content-Type: application/json" http://localhost:3000/v1/contact
 ##### Example cURL
 
 ```bash
-curl -X PUT -H "Content-Type: application/json" http://localhost:3000/v1/contactos/65503187742acfc9d7396ca1 -d '{"sector": "IT"}'
+curl -X PATCH -H "Content-Type: application/json" http://localhost:3000/v1/contactos/65503187742acfc9d7396ca1 -d '{"sector": "IT"}'
 ```
 
 </details>
