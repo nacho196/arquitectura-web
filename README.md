@@ -163,6 +163,32 @@ curl http://localhost:3000/v1/contactos?sector=IT&nombre=Ignacio
 ##### Example cURL
 
 ```bash
+curl -X PUT -H "Content-Type: application/json" http://localhost:3000/v1/contactos/65503187742acfc9d7396ca1 -d '{"nombre":"Alejandra Martinez","email":"amartinez@ejemplo.com","telefono":"345435345435","sector": "IT"}'
+```
+
+</details>
+
+<details>
+   <summary><code>PATCH</code> <code><b>/v1/contactos/{_id}</b></code><code>Actualizar parcialmente un registro por ID (email, sector)</code></summary>
+
+##### Parameters
+
+> | name              |  type     | data type      | description                         |
+> |-------------------|-----------|----------------|-------------------------------------|
+> | `_id` |  `required` | `String`                    | `ID del contacto`                |
+
+##### Responses
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `200`         | `text/plain;charset=UTF-8`        | `contacto actualizado exitosamente`                                |
+> | `400`         | `text/plain;charset=UTF-8`        | `formato id invalido`                                               |
+> | `404`         | `text/plain;charset=UTF-8`        | `Contacto no encontrado`                                             |
+> | `403`         | `text/plain;charset=UTF-8`        | `Operación no válida. Solo se permite actualizar los campos telefono o sector`|
+> | `500`         | `text/plain;charset=utf-8`         | `Error al actualizar el contacto`                                   |
+
+##### Example cURL
+
+```bash
 curl -X PUT -H "Content-Type: application/json" http://localhost:3000/v1/contactos/65503187742acfc9d7396ca1 -d '{"sector": "IT"}'
 ```
 
